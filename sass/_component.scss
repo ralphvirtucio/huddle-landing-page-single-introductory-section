@@ -89,6 +89,10 @@ body {
 
   &__illustration {
     margin-bottom: 3rem;
+
+    @media only screen and (min-width: 1400px) {
+      width: 40%;
+    }
   }
 
   &__content {
@@ -98,6 +102,7 @@ body {
     @media only screen and (min-width: 1400px) {
       text-align: start;
       padding-top: 2rem;
+      width: 50%;
     }
   }
 
