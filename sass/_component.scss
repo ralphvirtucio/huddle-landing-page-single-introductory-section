@@ -36,6 +36,12 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: var(--primary-1);
+
+  // @media only screen and (min-width: 1024px) {
+  //   background-image: url('../images/bg-desktop.svg');
+  //   background-size: cover;
+  //   background-position: top;
+  // }
 }
 
 .bounceInDown {
@@ -48,6 +54,9 @@ body {
   &__header {
     margin-bottom: 1rem;
     padding: 2rem 2rem 0 2rem;
+  }
+
+  &__section {
   }
 
   &__logo {
@@ -78,6 +87,14 @@ body {
   border: 1px solid #fff;
   padding: 0.4rem;
   border-radius: 100px;
+
+  &:hover {
+    border: 1px solid var(--primary-2);
+  }
+
+  &:hover svg {
+    fill: var(--primary-2);
+  }
 
   svg {
     width: 1rem;
