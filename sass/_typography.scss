@@ -1,12 +1,10 @@
 .heading {
   font-family: var(--font-heading);
   color: #fff;
-  line-height: 1.3;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.75rem;
 
-  @media only screen and (min-width: 1400px) {
-    line-height: 1.5;
-    font-size: 3.5rem;
+  @media only screen and (min-width: 1024px) {
+    font-size: 3rem;
     width: 20ch;
   }
 }
@@ -14,11 +12,11 @@
 .huddle-introductory__text {
   font-family: var(--font-body);
   color: #fff;
-  line-height: 1.5;
+  padding: 0.2rem;
+  margin-bottom: 2.5rem;
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1024px) {
     line-height: 1.5;
     font-size: 1.25rem;
-    width: 50ch;
   }
 }

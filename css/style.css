@@ -83,13 +83,11 @@ select {
 .heading {
   font-family: var(--font-heading);
   color: #fff;
-  line-height: 1.3;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.75rem;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .heading {
-    line-height: 1.5;
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 20ch;
   }
 }
@@ -97,13 +95,13 @@ select {
 .huddle-introductory__text {
   font-family: var(--font-body);
   color: #fff;
-  line-height: 1.5;
+  padding: 0.2rem;
+  margin-bottom: 2.5rem;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__text {
     line-height: 1.5;
     font-size: 1.25rem;
-    width: 50ch;
   }
 }
 
@@ -135,12 +133,14 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-color: var(--primary-1);
+  padding: 2rem;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   body {
     background-image: url("../images/bg-desktop.svg");
     background-size: cover;
     background-position: center;
+    padding: 4rem;
   }
 }
 
@@ -149,85 +149,61 @@ body {
 }
 
 .huddle-introductory {
-  padding: 6%;
-}
-@media only screen and (min-width: 1400px) {
-  .huddle-introductory {
-    padding: 6% 6% 0 6%;
-  }
+  margin-bottom: 3rem;
 }
 .huddle-introductory__header {
-  margin-bottom: 1rem;
-  padding: 2rem 2rem 0 2rem;
+  max-width: 40%;
+  margin-bottom: 3rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__header {
-    padding: 6%;
+    margin-bottom: 4rem;
   }
 }
-@media only screen and (min-width: 1400px) {
-  .huddle-introductory__header {
-    padding: 3% 0 0 6%;
-  }
-}
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__section {
     display: flex;
-    justify-content: space-between;
-  }
-}
-.huddle-introductory__logo {
-  width: 45%;
-}
-@media only screen and (min-width: 768px) {
-  .huddle-introductory__logo {
-    width: 30%;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .huddle-introductory__logo {
-    width: 15%;
+    justify-content: space-evenly;
   }
 }
 .huddle-introductory__illustration {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__illustration {
     width: 40%;
   }
 }
 .huddle-introductory__content {
   text-align: center;
-  padding: 0 0.85em 0.85em 0.85em;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__content {
+    width: 40%;
     text-align: start;
     padding-top: 2rem;
-    width: 50%;
   }
 }
 .huddle-introductory__social-media {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
   .huddle-introductory__social-media {
     justify-content: flex-end;
-    padding-right: 6%;
+    gap: 1rem;
   }
 }
 
 .social-media-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-decoration: none;
   border: 1px solid #fff;
-  padding: 0.4rem;
   border-radius: 100px;
+  padding: 0.5rem;
 }
 .social-media-link:hover {
   border: 1px solid var(--primary-2);
@@ -242,30 +218,18 @@ body {
 }
 
 .btn-register:link, .btn-register:visited {
-  display: inline-block;
-  margin-top: 1.5em;
-  margin-bottom: 2rem;
-  font-family: var(--font-heading);
-  text-align: center;
+  background-color: #fff;
   color: var(--primary-1);
   text-decoration: none;
-  background-color: #fff;
-  width: 70%;
+  font-family: var(--font-heading);
   border-radius: 100px;
-  cursor: pointer;
-  padding: 0.6em 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.085);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 5rem;
   transition: all 0.2s;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .btn-register:link, .btn-register:visited {
-    width: 40%;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .btn-register:link, .btn-register:visited {
-    width: 30%;
-    padding: 1em;
+    padding: 1rem 5rem;
   }
 }
 .btn-register:hover {
