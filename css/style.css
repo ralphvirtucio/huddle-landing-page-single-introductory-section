@@ -85,12 +85,24 @@ select {
   color: #fff;
   margin-bottom: 0.75rem;
 }
+@media only screen and (min-width: 1024px) {
+  .heading {
+    font-size: 3rem;
+    width: 20ch;
+  }
+}
 
 .huddle-introductory__text {
   font-family: var(--font-body);
   color: #fff;
   padding: 0.2rem;
   margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__text {
+    line-height: 1.5;
+    font-size: 1.25rem;
+  }
 }
 
 @keyframes bounceInDown {
@@ -123,6 +135,18 @@ body {
   background-color: var(--primary-1);
   padding: 2rem;
 }
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
+}
+
+.bounceInDown {
+  animation: bounceInDown 1s;
+}
 
 .huddle-introductory {
   margin-bottom: 3rem;
@@ -131,17 +155,45 @@ body {
   max-width: 40%;
   margin-bottom: 3rem;
 }
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__header {
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .huddle-introductory__illustration {
   margin-bottom: 4rem;
 }
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__illustration {
+    width: 40%;
+  }
+}
 .huddle-introductory__content {
   text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__content {
+    width: 40%;
+    text-align: start;
+    padding-top: 2rem;
+  }
 }
 .huddle-introductory__social-media {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .huddle-introductory__social-media {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
 }
 
 .social-media-link {
@@ -153,6 +205,12 @@ body {
   border-radius: 100px;
   padding: 0.5rem;
 }
+.social-media-link:hover {
+  border: 1px solid var(--primary-2);
+}
+.social-media-link:hover svg {
+  fill: var(--primary-2);
+}
 .social-media-link svg {
   width: 1rem;
   height: 1rem;
@@ -161,11 +219,22 @@ body {
 
 .btn-register:link, .btn-register:visited {
   background-color: #fff;
+  color: var(--primary-1);
   text-decoration: none;
   font-family: var(--font-heading);
   border-radius: 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   padding: 0.8rem 5rem;
+  transition: all 0.2s;
+}
+@media only screen and (min-width: 1024px) {
+  .btn-register:link, .btn-register:visited {
+    padding: 1rem 5rem;
+  }
+}
+.btn-register:hover {
+  background-color: var(--primary-2);
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

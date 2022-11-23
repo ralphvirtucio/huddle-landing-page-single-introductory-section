@@ -37,11 +37,18 @@ body {
   background-position: top;
   background-color: var(--primary-1);
   padding: 2rem;
+
+  @media only screen and (min-width: 1024px) {
+    background-image: url('../images/bg-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
 }
 
-// .bounceInDown {
-//   animation: bounceInDown 1s;
-// }
+.bounceInDown {
+  animation: bounceInDown 1s;
+}
 
 .huddle-introductory {
   margin-bottom: 3rem;
@@ -49,27 +56,46 @@ body {
   &__header {
     max-width: 40%;
     margin-bottom: 3rem;
+
+    @media only screen and (min-width: 1024px) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__section {
-  }
-
-  &__logo {
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 
   &__illustration {
     margin-bottom: 4rem;
+
+    @media only screen and (min-width: 1024px) {
+      width: 40%;
+    }
   }
 
   &__content {
     text-align: center;
+
+    @media only screen and (min-width: 1024px) {
+      width: 40%;
+      text-align: start;
+      padding-top: 2rem;
+    }
   }
 
   &__social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+
+    @media only screen and (min-width: 1024px) {
+      justify-content: flex-end;
+      gap: 1rem;
+    }
   }
 }
 
@@ -82,6 +108,14 @@ body {
   border-radius: 100px;
   padding: 0.5rem;
 
+  &:hover {
+    border: 1px solid var(--primary-2);
+  }
+
+  &:hover svg {
+    fill: var(--primary-2);
+  }
+
   svg {
     width: 1rem;
     height: 1rem;
@@ -93,10 +127,22 @@ body {
   &:link,
   &:visited {
     background-color: #fff;
+    color: var(--primary-1);
+
     text-decoration: none;
     font-family: var(--font-heading);
     border-radius: 100px;
     box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.2);
     padding: 0.8rem 5rem;
+    transition: all 0.2s;
+
+    @media only screen and (min-width: 1024px) {
+      padding: 1rem 5rem;
+    }
+  }
+
+  &:hover {
+    background-color: var(--primary-2);
+    color: #fff;
   }
 }
